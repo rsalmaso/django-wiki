@@ -3,8 +3,8 @@ from django.contrib import auth
 from django.contrib.auth import authenticate
 from django.contrib.auth.models import AnonymousUser
 from django.shortcuts import resolve_url
+from django.urls import reverse
 from wiki.conf import settings as wiki_settings
-from wiki.models import reverse
 
 from ..base import (
     SUPERUSER1_PASSWORD, SUPERUSER1_USERNAME, ArticleWebTestUtils, DjangoClientTestBase, RequireRootArticleMixin, TestBase, wiki_override_settings,
