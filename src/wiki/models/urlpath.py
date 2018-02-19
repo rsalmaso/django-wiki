@@ -7,7 +7,6 @@ from django.contrib.sites.models import Site
 from django.core.exceptions import ValidationError
 from django.db import models, transaction
 from django.db.models.signals import post_save, pre_delete
-from django.urls import reverse
 # Django 1.6 transaction API, required for 1.8+
 from django.utils.translation import gettext, gettext_lazy as _
 from mptt.fields import TreeForeignKey
@@ -17,6 +16,7 @@ from wiki.conf import settings
 from wiki.core.exceptions import MultipleRootURLs, NoRootURL
 from wiki.decorators import disable_signal_for_loaddata
 from wiki.models.article import Article, ArticleForObject, ArticleRevision
+from wiki.reverse import reverse
 
 __all__ = [
     'URLPath',

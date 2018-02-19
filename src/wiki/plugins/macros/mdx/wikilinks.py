@@ -5,8 +5,8 @@ Extend the shipped Markdown extension 'wikilinks'
 import re
 
 import markdown
-from django.urls import reverse
 from markdown.extensions import wikilinks
+from wiki.reverse import reverse
 
 
 def build_url(label, base, end, md):

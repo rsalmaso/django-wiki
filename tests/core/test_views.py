@@ -1,12 +1,12 @@
 import pprint
 
 from django.http import JsonResponse
-from django.shortcuts import resolve_url
 from django.utils.html import escape
 from django_functest import FuncBaseMixin
 from wiki import models
 from wiki.forms import validate_slug_numbers
-from wiki.models import ArticleRevision, URLPath, reverse
+from wiki.models import ArticleRevision, URLPath
+from wiki.reverse import resolve_url, reverse
 
 from ..base import ArticleWebTestUtils, DjangoClientTestBase, RequireRootArticleMixin, SeleniumBase, WebTestBase
 

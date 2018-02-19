@@ -3,10 +3,10 @@ from functools import wraps
 from django.http import HttpResponseForbidden, HttpResponseNotFound, HttpResponseRedirect
 from django.shortcuts import get_object_or_404, redirect
 from django.template.loader import render_to_string
-from django.urls import reverse
 from django.utils.http import urlquote
 from wiki.conf import settings
 from wiki.core.exceptions import NoRootURL
+from wiki.reverse import reverse
 
 
 def response_forbidden(request, article, urlpath):

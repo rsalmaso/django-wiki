@@ -2,7 +2,6 @@ import logging
 
 from django.contrib import messages
 from django.shortcuts import get_object_or_404, redirect
-from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.utils.translation import gettext as _
 from django.views.generic.base import RedirectView
@@ -13,6 +12,7 @@ from wiki.core.paginator import WikiPaginator
 from wiki.decorators import get_article
 from wiki.models.pluginbase import RevisionPluginRevision
 from wiki.plugins.images import forms, models
+from wiki.reverse import reverse
 from wiki.views.mixins import ArticleMixin
 
 logger = logging.getLogger(__name__)

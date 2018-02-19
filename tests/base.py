@@ -5,8 +5,8 @@ import django_functest
 from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 from django.template import Context, Template
 from django.test import TestCase, override_settings
-from django.urls import reverse
 from wiki.models import URLPath
+from wiki.reverse import reverse
 
 SUPERUSER1_USERNAME = 'admin'
 SUPERUSER1_PASSWORD = 'secret'

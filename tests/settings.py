@@ -1,6 +1,6 @@
 import os
 
-from django.urls import reverse_lazy
+from wiki.reverse import reverse_lazy
 
 TESTS_DATA_ROOT = os.path.dirname(__file__)
 

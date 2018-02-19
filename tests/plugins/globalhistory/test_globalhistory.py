@@ -1,5 +1,5 @@
-from django.urls import reverse
 from wiki.models import URLPath
+from wiki.reverse import reverse
 
 from ...base import ArticleWebTestUtils, DjangoClientTestBase, RequireRootArticleMixin
 

@@ -3,8 +3,8 @@ from django.apps import apps
 from django.conf import settings as django_settings
 from django.contrib.messages import constants as messages
 from django.core.files.storage import default_storage
-from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
+from wiki.reverse import reverse_lazy
 
 #: Should urls be case sensitive?
 URL_CASE_SENSITIVE = getattr(django_settings, 'WIKI_URL_CASE_SENSITIVE', False)

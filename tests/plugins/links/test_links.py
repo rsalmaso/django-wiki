@@ -1,8 +1,8 @@
 import markdown
 from django.test import TestCase
-from django.urls import reverse_lazy
 from wiki.models import URLPath
 from wiki.plugins.links.mdx.djangowikilinks import WikiPathExtension
+from wiki.reverse import reverse_lazy
 
 
 class WikiPathExtensionTests(TestCase):

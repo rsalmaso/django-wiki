@@ -8,7 +8,6 @@ from django.db import transaction
 from django.db.models import Q
 from django.http import Http404
 from django.shortcuts import get_object_or_404, redirect, render
-from django.urls import reverse
 from django.utils.decorators import method_decorator
 from django.utils.translation import gettext as _, ngettext
 from django.views.generic import DetailView
@@ -24,6 +23,7 @@ from wiki.core.paginator import WikiPaginator
 from wiki.core.plugins import registry as plugin_registry
 from wiki.core.utils import object_to_json_response
 from wiki.decorators import get_article
+from wiki.reverse import reverse
 from wiki.views.mixins import ArticleMixin
 
 log = logging.getLogger(__name__)
